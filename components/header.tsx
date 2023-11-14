@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Header() {
     const {data: session} = useSession();
     return (
-        <div className="flex flex-row justify-between px-2 items-center h-[10vh] py-2 bg-gray-800 fixed w-full z-50">
+        <div className="flex flex-row justify-between px-2 items-center h-[10vh] py-2 bg-gray-800 w-full z-50">
             <Link href={'/'} className="w-20">
                 <Image src={'/rumble_logo.webp'} width={200} height={200} alt="logo" priority={true} />
             </Link>

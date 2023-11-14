@@ -248,20 +248,40 @@ model lorcanaSet {
 }
 
 model rumble_miniatures {
-  id          Int    @id @default(autoincrement())
+  id                  Int                  @id @default(autoincrement())
+  name                Json
+  cost                Int
+  family              Json
+  type                Json
+  role                Json
+  traits              Json
+  tags                Json
+  category            Json
+  img                 String
+  description         Json
+  stats               Json
+  talents             Json
+  defId               String               @unique
+  leaderAbility       Json
+  rumble_miniature_fr rumble_miniature_fr?
+}
+
+model rumble_miniature_fr {
+  id          Int               @id @default(autoincrement())
+  defId       String            @unique
   name        String
-  cost        Int
   family      String
   type        String
   role        String
   traits      Json
   tags        Json
   category    String
-  img         String
-  description String @db.LongText
-  stats       Json
+  description String            @db.LongText
   talents     Json
-  defId       String @unique
+  miniatureId Int               @unique
+  miniature   rumble_miniatures @relation(fields: [miniatureId], references: [id])
+
+  @@index([miniatureId])
 }
 
 model wavenBuild {

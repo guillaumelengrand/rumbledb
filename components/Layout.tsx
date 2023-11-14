@@ -7,7 +7,7 @@ interface LayoutProps {
     pageName?: String;
 }
 
-export default function Layout({children, pageName = 'Marvel Snap DB'}: LayoutProps) {
+export default function Layout({children, pageName = 'Warcraft Rumble DB'}: LayoutProps) {
     return (
         <>
             <Head>
@@ -17,7 +17,7 @@ export default function Layout({children, pageName = 'Marvel Snap DB'}: LayoutPr
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
-            <div className="pt-[10vh]">{children}</div>
+            <div className="h-[90vh] overflow-y-auto">{children}</div>
         </>
     );
 }
