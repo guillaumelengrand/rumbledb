@@ -263,6 +263,7 @@ model rumble_miniatures {
   talents             Json
   defId               String               @unique
   leaderAbility       Json
+  images              Json
   rumble_miniature_fr rumble_miniature_fr?
 }
 

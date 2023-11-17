@@ -9,7 +9,17 @@ const nextConfig = {
                 port: '',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'assets.warcraftrumble.blizzard.com',
+                port: '',
+                pathname: '/**',
+            },
         ],
+    },
+    i18n: {
+        locales: ['en-US', 'fr'],
+        defaultLocale: 'fr',
     },
 };
 

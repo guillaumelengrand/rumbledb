@@ -13,9 +13,6 @@ export async function getMiniatureById(id: number) {
         where: {
             id,
         },
-        include: {
-            rumble_miniature_fr: true,
-        },
     });
 
     return JSON.parse(JSON.stringify(res));

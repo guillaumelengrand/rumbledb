@@ -1,15 +1,12 @@
 import {getFamilies, getMiniatureByDefId, getRoles, getTypes} from '@/models/miniature';
-import {Prisma, rumble_miniatures} from '@prisma/client';
+import {rumble_miniatures} from '@prisma/client';
 import {GetServerSideProps} from 'next';
 import {useEffect, useState} from 'react';
 
-import {Button, Textarea} from '@nextui-org/react';
-import {Select, SelectSection, SelectItem} from '@nextui-org/react';
+import {Button} from '@nextui-org/react';
 import MiniatureForm from '@/components/miniature/miniatureForm';
 import {fetchWrapper} from '@/lib/utils';
 import {ToastContainer, toast} from 'react-toastify';
-
-let families = ['Alliance', 'Horde', 'Blackrock', 'Beast', 'Undead'];
 
 interface MiniatureByDefIdProps {
     miniature: rumble_miniatures;
@@ -17,7 +14,7 @@ interface MiniatureByDefIdProps {
     roles: LocaleJson[];
     types: LocaleJson[];
 }
-const MiniatureByDefId = ({miniature, families, roles, types}: MiniatureByDefIdProps) => {
+const AdminMiniatureByDefId = ({miniature, families, roles, types}: MiniatureByDefIdProps) => {
     const [miniatureState, setMiniatureState] = useState(miniature);
 
     useEffect(() => {
@@ -92,4 +89,4 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
     };
 };
 
-export default MiniatureByDefId;
+export default AdminMiniatureByDefId;
