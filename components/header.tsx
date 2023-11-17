@@ -1,6 +1,7 @@
 import {signIn, signOut, useSession} from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
     const {data: session} = useSession();
@@ -9,7 +10,7 @@ export default function Header() {
             <Link href={'/'} className="w-20">
                 <Image src={'/rumble_logo.webp'} width={200} height={200} alt="logo" priority={true} />
             </Link>
-            {/* <h1>Marvel Snap DB</h1> */}
+
             <div className="flex flex-row gap-4">
                 <div className="flex flex-row gap-2 font-bold">
                     <Link href={'/miniature'}>Miniature</Link>
@@ -19,13 +20,17 @@ export default function Header() {
                 <div className="flex flex-row gap-2 font-bold">
                     <Link href={'/admin'}>Admin</Link>
                 </div>
+
+                <LanguageSwitcher />
             </div>
 
-            <div>
+            <div className="flex flex-row gap-1">
                 {session ? (
                     <>
-                        Signed in as {session?.user?.email} <br />
-                        <button onClick={() => signOut()}>Sign out</button>
+                        <div className="rounded px-2 bg-orange-400">{session?.user?.email}</div>
+                        <button className="button" onClick={() => signOut()}>
+                            Sign out
+                        </button>
                     </>
                 ) : (
                     <>

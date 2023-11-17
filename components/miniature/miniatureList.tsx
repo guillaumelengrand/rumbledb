@@ -1,6 +1,7 @@
 import {rumble_miniatures} from '@prisma/client';
 import Image from 'next/image';
 import Link from 'next/link';
+import {useRouter} from 'next/router';
 
 interface MiniatureListProps {
     miniatures: rumble_miniatures[];
@@ -8,6 +9,8 @@ interface MiniatureListProps {
 }
 
 const MiniatureList = ({miniatures, mode = 'client'}: MiniatureListProps) => {
+    let router = useRouter();
+    let locale = router.locale ? router.locale : 'fr';
     let baseUrl = mode === 'client' ? '/miniature' : '/admin/miniature';
     return (
         <div className="flex flex-wrap mx-auto w-full xl:w-5/6">
@@ -54,7 +57,11 @@ const MiniatureList = ({miniatures, mode = 'client'}: MiniatureListProps) => {
                                     alt={(minia.name as unknown as LocaleJson).en}
                                 />
 
-                                <div className="text-center">{(minia.name as unknown as LocaleJson).en}</div>
+                                <div className="text-center">
+                                    {locale === 'fr' && (minia.name as unknown as LocaleJson).fr != ''
+                                        ? (minia.name as unknown as LocaleJson).fr
+                                        : (minia.name as unknown as LocaleJson).en}
+                                </div>
                             </div>
                         </Link>
                     );

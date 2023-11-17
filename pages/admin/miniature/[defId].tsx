@@ -25,17 +25,20 @@ const AdminMiniatureByDefId = ({miniature, families, roles, types}: MiniatureByD
             <ToastContainer />
             <h1 className="text-3xl">{miniature.name && (miniature.name as unknown as LocaleJson).en}</h1>
 
-            <Button
-                type="submit"
-                onClick={async () => {
-                    const res = await fetchWrapper(`/api/miniature/${miniature.defId}`, miniatureState, 'PUT');
+            <div className="flex flex-col items-center">
+                <Button
+                    type="submit"
+                    onClick={async () => {
+                        const res = await fetchWrapper(`/api/miniature/${miniature.defId}`, miniatureState, 'PUT');
 
-                    if (res.ok) toast('Miniature update !');
-                    else toast.error('Miniature update error !');
-                }}
-            >
-                Save
-            </Button>
+                        if (res.ok) toast('Miniature update !');
+                        else toast.error('Miniature update error !');
+                    }}
+                    className="bg-green-600 text-white text-xl font-bold w-1/2"
+                >
+                    Save
+                </Button>
+            </div>
             <div className="flex flex-row gap-1">
                 <MiniatureForm
                     miniature={miniatureState}
@@ -56,17 +59,20 @@ const AdminMiniatureByDefId = ({miniature, families, roles, types}: MiniatureByD
                     className="w-1/2"
                 />
             </div>
-            <Button
-                type="submit"
-                onClick={async () => {
-                    const res = await fetchWrapper(`/api/miniature/${miniature.defId}`, miniatureState, 'PUT');
+            <div className="flex flex-col items-center">
+                <Button
+                    type="submit"
+                    onClick={async () => {
+                        const res = await fetchWrapper(`/api/miniature/${miniature.defId}`, miniatureState, 'PUT');
 
-                    if (res.ok) toast('Miniature update !');
-                    else toast.error('Miniature update error !');
-                }}
-            >
-                Save
-            </Button>
+                        if (res.ok) toast('Miniature update !');
+                        else toast.error('Miniature update error !');
+                    }}
+                    className="bg-green-600 text-white text-xl font-bold w-1/2"
+                >
+                    Save
+                </Button>
+            </div>
         </div>
     );
 };
