@@ -10,7 +10,7 @@ export default function LanguageSwitcher() {
     return (
         <div>
             <select
-                className="bg-orange-400 rounded"
+                className="bg-orange-500 rounded"
                 onChange={e =>
                     router.push(
                         {
@@ -25,10 +25,10 @@ export default function LanguageSwitcher() {
             >
                 <option value="fr">
                     français
-                    <Image src={'/france.png'} width={100} height={100} alt="français" />
+                    {/* <Image src={'/france.png'} width={100} height={100} alt="français" /> */}
                 </option>
                 <option value="en">
-                    <Image src={'/united-kingdom.png'} width={100} height={100} className="w-full" alt="English" />
+                    {/* <Image src={'/united-kingdom.png'} width={100} height={100} className="w-full" alt="English" /> */}
                 </option>
             </select>
 

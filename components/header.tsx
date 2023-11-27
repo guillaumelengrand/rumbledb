@@ -24,10 +24,10 @@ export default function Header() {
                 <LanguageSwitcher />
             </div>
 
-            <div className="flex flex-row gap-1">
+            <div className="flex flex-row gap-1 items-center">
                 {session ? (
                     <>
-                        <div className="rounded px-2 bg-orange-400">{session?.user?.email}</div>
+                        <div className="rounded px-2 py-1 bg-orange-500">{session?.user?.email}</div>
                         <button className="button" onClick={() => signOut()}>
                             Sign out
                         </button>
