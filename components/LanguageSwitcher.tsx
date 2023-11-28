@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
                         {locale: e.target.value},
                     )
                 }
-                defaultValue={router.locale}
+                value={router.locale}
             >
                 <option value="fr">
                     français
