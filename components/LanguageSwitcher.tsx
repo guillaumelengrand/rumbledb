@@ -24,10 +24,11 @@ export default function LanguageSwitcher() {
                 value={router.locale}
             >
                 <option value="fr">
-                    français
+                    Français
                     {/* <Image src={'/france.png'} width={100} height={100} alt="français" /> */}
                 </option>
                 <option value="en">
+                    English
                     {/* <Image src={'/united-kingdom.png'} width={100} height={100} className="w-full" alt="English" /> */}
                 </option>
             </select>
