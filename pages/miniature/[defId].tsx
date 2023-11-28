@@ -37,7 +37,7 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
                                         : (miniature.name as unknown as LocaleJson).en}
                                 </h1>
                             </Link>
-                            <div className="bg-yellow-600 rounded-full px-2 ">{miniature.cost}</div>
+                            <div className="bg-amber-500 rounded-full px-2 ">{miniature.cost}</div>
                         </div>
                         <div className="px-2">
                             <div className="flex flex-row gap-1">

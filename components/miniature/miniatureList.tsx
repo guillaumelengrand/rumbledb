@@ -23,7 +23,7 @@ const MiniatureList = ({miniatures, mode = 'client'}: MiniatureListProps) => {
                             className="h-[30vh] w-1/2 p-2 sm:w-1/3 md:w-1/4 xl:w-1/6"
                         >
                             <div
-                                className={`flex flex-col gap-1 items-center justify-between h-full opacity-60 hover:opacity-100 rounded p-2 font-bold text-lg hover:text-white relative ${
+                                className={`flex flex-col gap-1 items-center justify-between h-full opacity-75 hover:opacity-100 rounded p-2 font-bold text-lg hover:text-white relative ${
                                     (minia.family as unknown as LocaleJson).en === 'Alliance'
                                         ? 'bg-blue-600'
                                         : (minia.family as unknown as LocaleJson).en === 'Horde'
@@ -44,7 +44,7 @@ const MiniatureList = ({miniatures, mode = 'client'}: MiniatureListProps) => {
                                         alt={`${(minia.family as unknown as LocaleJson).en}`}
                                     />
                                 </div>
-                                <div className="absolute top-2 right-2 bg-yellow-500 rounded-full px-2">
+                                <div className="absolute top-2 right-2 bg-amber-500 rounded-full px-2">
                                     {minia.cost}
                                 </div>
                                 <div></div>
