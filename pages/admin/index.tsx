@@ -3,8 +3,9 @@ import Link from 'next/link';
 
 const IndexAdmin = () => {
     return (
-        <div className="flex flex-row justify-center items-center h-full">
+        <div className="flex flex-col justify-center items-center h-full">
             <Link href={`/admin/miniature`}>Miniatures</Link>
+            <Link href={`/admin/deck`}>Decks</Link>
         </div>
     );
 };
