@@ -4,6 +4,7 @@ import {GetServerSideProps} from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
+import {useTranslations} from 'next-intl';
 
 interface MiniatureByDefIdProps {
     miniature: rumble_miniatures;
@@ -12,6 +13,8 @@ interface MiniatureByDefIdProps {
 const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
     const router = useRouter();
     let locale = router.locale ? router.locale : 'fr';
+
+    const t = useTranslations('miniatures');
 
     console.log({locale});
 
@@ -41,7 +44,7 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
                         </div>
                         <div className="px-2">
                             <div className="flex flex-row gap-1">
-                                <div className="font-semibold">Family:</div>
+                                <div className="font-semibold capitalize">{t('global.family')}:</div>
                                 <div>
                                     {locale === 'en'
                                         ? (miniature.family as unknown as LocaleJson).en
@@ -51,7 +54,7 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
                                 </div>
                             </div>
                             <div className="flex flex-row gap-1">
-                                <div className="font-semibold">Type:</div>
+                                <div className="font-semibold capitalize">{t('global.type')}:</div>
                                 <div>
                                     {locale === 'en'
                                         ? (miniature.type as unknown as LocaleJson).en
@@ -61,7 +64,7 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
                                 </div>
                             </div>
                             <div className="flex flex-row gap-1">
-                                <div className="font-semibold">Role:</div>
+                                <div className="font-semibold capitalize">{t('global.role')}:</div>
                                 <div>
                                     {locale === 'en'
                                         ? (miniature.role as unknown as LocaleJson).en
@@ -88,7 +91,7 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
             {/** Stat Section */}
             <div className="flex flex-col gap-2 bg-blue-950 px-4 py-2 rounded-md">
                 <h2 className="text-xl font-bold">Stats</h2>
-                <div className="flex flex-wrap gap-2 px-2">
+                <div className="flex flex-wrap px-2">
                     {(miniature.stats as unknown as MiniatureStat[]).map((stat: MiniatureStat) => (
                         <div className="flex flex-row gap-4 w-1/3" key={stat.name}>
                             {/* <div className="flex flex-col items-center justify-center w-1/12">
@@ -112,7 +115,7 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
             {/** Leader Ability Section */}
             {(miniature.category as unknown as LocaleJson).en === 'leader' && (
                 <div className="flex flex-col gap-2 bg-blue-950 px-4 py-2 rounded-md">
-                    <h2 className="text-xl font-bold">Leader Ability</h2>
+                    <h2 className="text-xl font-bold">{t('leader.ability')}</h2>
                     <div className="flex flex-col gap-2 px-2">
                         <div className="flex flex-col">
                             <div className="font-semibold">
@@ -164,6 +167,9 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
                                             ? trait.name.fr
                                             : trait.name.en}
                                     </div>
+                                    <div className="font-semibold">
+                                        {t(`trait.${trait.name.en.toLowerCase().replace(' ', '_')}.title`)}
+                                    </div>
                                     <div
                                         className="pl-2"
                                         dangerouslySetInnerHTML={{
@@ -173,6 +179,12 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
                                                     : trait.value.fr != ''
                                                     ? trait.value.fr
                                                     : trait.value.en,
+                                        }}
+                                    ></div>
+                                    <div
+                                        className="pl-2"
+                                        dangerouslySetInnerHTML={{
+                                            __html: t(`trait.${trait.name.en.toLowerCase().replace(' ', '_')}.value`),
                                         }}
                                     ></div>
                                 </div>
@@ -232,7 +244,7 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
 
     if (!miniature) return {notFound: true};
     return {
-        props: {miniature},
+        props: {miniature, messages: (await import(`../../messages/${ctx.locale}.json`)).default},
     };
 };
 
