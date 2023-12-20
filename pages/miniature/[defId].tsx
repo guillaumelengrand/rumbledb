@@ -161,30 +161,14 @@ const MiniatureByDefId = ({miniature}: MiniatureByDefIdProps) => {
                                 </div>
                                 <div className="flex flex-col justify-center w-11/12">
                                     <div className="font-semibold">
-                                        {locale === 'en'
-                                            ? trait.name.en
-                                            : trait.name.fr != ''
-                                            ? trait.name.fr
-                                            : trait.name.en}
-                                    </div>
-                                    <div className="font-semibold">
                                         {t(`trait.${trait.name.en.toLowerCase().replace(' ', '_')}.title`)}
                                     </div>
                                     <div
                                         className="pl-2"
                                         dangerouslySetInnerHTML={{
-                                            __html:
-                                                locale === 'en'
-                                                    ? trait.value.en
-                                                    : trait.value.fr != ''
-                                                    ? trait.value.fr
-                                                    : trait.value.en,
-                                        }}
-                                    ></div>
-                                    <div
-                                        className="pl-2"
-                                        dangerouslySetInnerHTML={{
-                                            __html: t(`trait.${trait.name.en.toLowerCase().replace(' ', '_')}.value`),
+                                            __html: t.raw(
+                                                `trait.${trait.name.en.toLowerCase().replace(' ', '_')}.value`,
+                                            ),
                                         }}
                                     ></div>
                                 </div>

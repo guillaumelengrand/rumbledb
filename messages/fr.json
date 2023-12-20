@@ -32,48 +32,48 @@
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Elemental.png"
             },
             "melee": {
-                "title": "Melee",
-                "value": "Strong vs <span class=\"font-bold\">Ranged</span> units.",
+                "title": "Mêlée",
+                "value": "Efficace contre les unités à <span class=\"font-bold\">distance</span>.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Melee.png"
             },
             "squad": {
-                "title": "Squad",
-                "value": "Strong vs <span class=\"font-bold\">One-Target</span> units.",
+                "title": "Escouade",
+                "value": "Efficace contre les unités à <span class=\"font-bold\">cible unique</span>.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Squad.png"
             },
             "cycle": {
                 "title": "Cycle",
-                "value": "2 cost or less for more Mini plays!",
+                "value": "Coût de 2 ou moins pour plus de figurines en jeu !",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Cycle.png"
             },
             "fast": {
-                "title": "Fast",
-                "value": "Fastest moving units.",
+                "title": "Rapide",
+                "value": "Unités se déplacant le plus rapidement.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Fast.png"
             },
             "one-target": {
-                "title": "One-Target",
-                "value": "Strong vs <span class=\"font-bold\">AoE</span> units.",
+                "title": "Cible unique",
+                "value": "Efficace contre les unités <span class=\"font-bold\">à zone d'effet</span>.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/SingleTarget.png"
             },
             "fury": {
-                "title": "Fury",
-                "value": "Attack speed increases while in combat.",
+                "title": "Fureur",
+                "value": "La vitesse d'attaque est augmentée en combat.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Fury.png"
             },
             "tank": {
                 "title": "Tank",
-                "value": "High health unit. Good at soaking <span class=\"font-bold\">Tower</span> damage.",
+                "value": "Unité aux points de vie élevés. Utile pour absorber les dégâts infligés par les <span class=\"font-bold\">Tours</span>.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Tank.png"
             },
             "hook": {
-                "title": "Hook",
-                "value": "Hooks ranged enemies.",
+                "title": "Crochet",
+                "value": "Attire les adversaires à distance.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Ambush.png"
             },
             "unbound": {
-                "title": "Unbound",
-                "value": "Can be played anywhere on the map.",
+                "title": "Détachement",
+                "value": "Jouable n'importe où sur la carte.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Unbound.png"
             },
             "miner": {
@@ -82,33 +82,33 @@
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Miner.png"
             },
             "spell": {
-                "title": "Spell",
-                "value": "Cast anywhere on the map.",
+                "title": "Sort",
+                "value": "Se lance n'importe où sur la carte.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Spell.png"
             },
             "stealth": {
-                "title": "Stealth",
-                "value": "Invisible to enemies until it attacks or is damaged.",
+                "title": "Camouflage",
+                "value": "Invisible par les adversaires jusqu'à ce que l'unité attaque ou subisse des dégâts.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Stealth.png"
             },
             "flying": {
-                "title": "Flying",
-                "value": "Strong vs <span class=\"font-bold\">Melee</span> units.",
+                "title": "Vol",
+                "value": "Efficace contre les unités de <span class=\"font-bold\">Mélêe</span>.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Flying.png"
             },
             "siege": {
-                "title": "Siege",
-                "value": "Only attacks <span class=\"font-bold\">Towers</span> and <span class=\"font-bold\">Bosses</span>.",
+                "title": "Spécialiste de siège",
+                "value": "Attaque uniquement les <span class=\"font-bold\">Tours</span> et les <span class=\"font-bold\">Boss</span>.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Siege.png"
             },
             "armored": {
-                "title": "Armored",
-                "value": "50% <span class=\"font-bold\">Physical</span> damage reduction.",
+                "title": "Armure",
+                "value": "Dégâts <span class=\"font-bold\">physiques</span> subis réduits de 50%.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Armored.png"
             },
             "siege_damage": {
-                "title": "Siege Damage",
-                "value": "Double damage vs <span class=\"font-bold\">Towers</span>.",
+                "title": "Dégâts de siège",
+                "value": "Dégâts doublés contre les <span class=\"font-bold\">Tours</span>.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Siege.png"
             },
             "attack_stun": {
@@ -117,118 +117,118 @@
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Stun.png"
             },
             "rebirth": {
-                "title": "Rebirth",
-                "value": "One-time self resurrection. Reborn at 50% life.",
+                "title": "Renaissance",
+                "value": "Autorésurection unique. Ressucite avec 50% de ses points de vie.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Rebirth.png"
             },
             "resistant": {
-                "title": "Resistant",
-                "value": "Takes 50% less <span class=\"font-bold\">Elemental</span> damage.",
+                "title": "Resistance",
+                "value": "Subit 50% de dégâts <span class=\"font-bold\">Elémentaire</span> en moins.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Resistant.png"
             },
             "bombard": {
-                "title": "Bombard",
-                "value": "Attacks ground enemies only.",
+                "title": "Bombardement",
+                "value": "Attaque uniquement les adversaires au sol.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Bombard.png"
             },
             "cannibalize": {
-                "title": "Cannibalize",
-                "value": "Consumes fallen enemy gold residue to regain health.",
+                "title": "Cannibalisme",
+                "value": "Consomme les résidus d'or des adversaires morts pour récupérer des points de vie.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Cannibalize.png"
             },
             "frost": {
-                "title": "Frost",
-                "value": "Frost damage slows enemy movement and attack speed.",
+                "title": "Givre",
+                "value": "Les dégâts de Givre réduisent les vitesses d'attaque et de déplacement de l'unité ennemie.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Frost.png"
             },
             "cheap_shot": {
-                "title": "Cheap Shot",
-                "value": "Attacking from <span class=\"font-bold\">Stealth</span> will <span class=\"font-bold\">Stun</span> enemy units.",
+                "title": "Coup bas",
+                "value": "Les attaques des unités <span class=\"font-bold\">Camouflées</span> <span class=\"font-bold\">étourdissent</span> les unités adverses.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Stun.png"
             },
             "revive": {
-                "title": "Revive",
-                "value": "Squadmates resurrect each other.",
+                "title": "Résurection",
+                "value": "Les unités de l'escouade se ressucitent entre elles.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Rebirth.png"
             },
             "carrion": {
-                "title": "Carrion",
-                "value": "Multiplies from slain enemies.",
+                "title": "Nécrophage",
+                "value": "Se multiplie sur la dépouille des adversaires tués.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Squad.png"
             },
             "bloodlust": {
-                "title": "Bloodlust",
-                "value": "Bloodlusted units gain +33% movement and attack speed.",
+                "title": "Furie sanguinaire",
+                "value": "Vitesse d'attaque et de déplacement des unités avec Furie sanguinaire augmentées de 33%.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Bloodlust.png"
             },
             "possession": {
                 "title": "Possession",
-                "value": "Takes control of an enemy unit.",
+                "value": "Prend le contrôle d'une unité ennemie.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Possession.png"
             },
             "percent_damage": {
-                "title": "Percent Damage",
-                "value": "Deals a percentage of the target's health in damage.",
+                "title": "Dégâts en pourcentage",
+                "value": "Inflige un pourcentage de la vie de la cible en dégâts.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Damage.png"
             },
             "attack_root": {
-                "title": "Attack Root",
-                "value": "Attack roots enemies.",
+                "title": "Attaque immobilisante",
+                "value": "Les attaques immobilisent les unités ennemies.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Stun.png"
             },
             "ambush": {
-                "title": "Ambush",
-                "value": "Double damage when attacking from <span class=\"font-bold\">Stealth</span>.",
+                "title": "Embuscade",
+                "value": "Les attaques portées en étant <span class=\"font-bold\">camouflé</span> infligent le double de dégâts.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Ambush.png"
             },
             "poisonous": {
-                "title": "Poisonous",
-                "value": "Deals stacking damage over time. Strong vs <span class=\"font-bold\">Armored</span>.",
+                "title": "Toxicité",
+                "value": "Inflige des dégâts sur la durée qui s'accumulent. Efficace contre <span class=\"font-bold\">Armure</span>.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Poisons.png"
             },
             "haunt": {
-                "title": "Haunt",
-                "value": "Summon a Banshee on death.",
+                "title": "Hanté",
+                "value": "Invoque une Banshee à la mort.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Possession.png"
             },
             "summoner": {
-                "title": "Summoner",
-                "value": "Summons additional units.",
+                "title": "Invocation",
+                "value": "Invoque davantage d'unités.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Reanimate.png"
             },
             "longshot": {
-                "title": "Longshot",
-                "value": "Outranges EVERYTHING else.",
+                "title": "Long portée",
+                "value": "A une plus grande portée que TOUT le reste.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Longshot.png"
             },
             "healer": {
-                "title": "Healer",
-                "value": "Heals friendly units.",
+                "title": "Soins",
+                "value": "Soigne les unités amicales.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Healer.png"
             },
             "hatching": {
-                "title": "Hatching",
-                "value": "Unit hatches into final form when attacked.",
+                "title": "Eclosion",
+                "value": "L'unité éclot dans sa forme finale lorsqu'elle est attaquée.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Hatching.png"
             },
             "vulnerable": {
-                "title": "Vulnerable",
-                "value": "Unit takes 2x elemental damage.",
+                "title": "Fragile",
+                "value": "les unités subissent le double de dégâts élémentaires.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Vulnerable.png"
             },
             "heal_squadmate": {
-                "title": "Heal Squadmate",
-                "value": "Mountaineer periodically heals his Bear companion.",
+                "title": "Soins à une unité de l'escouade",
+                "value": "Le montagnard soigne régulièrement son compagnon ours.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Healer.png"
             },
             "charge": {
                 "title": "Charge",
-                "value": "Charges to enemy targets.",
+                "value": "Charge les cibles ennemies.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Charge.png"
             },
             "dismounts": {
-                "title": "Dismounts",
-                "value": "Dismounts the mount/vehicle after it's destroyed.",
+                "title": "Désarçonné",
+                "value": "Descend de la monture/véhicule après sa destruction.",
                 "urlImg": "https://arclightbase.com/static/minis/assets/sprites/Dismounts.png"
             }
         }
